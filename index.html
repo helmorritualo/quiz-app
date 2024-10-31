@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Quiz App | First Version</title>
+   <link rel="stylesheet" href="Assets/style/style.css">
+   <script defer type="module" src="/Assets/js/script.js"></script>
+</head>
+
+<body>
+
+   <section class="main-container">
+      <div class="info-container" id="info-container">
+         <h1>Some rules of this quiz</h1>
+         <ol>
+            <li>You will have 30 seconds in each question.</li>
+            <li>You can't select any option once time goes off.</li>
+            <li>You can't exit from quiz while your aswering.</li>
+            <li>You'll get poinst on the basis of your correct answers.</li>
+         </ol>
+
+         <button type="submit" id="continue">Continue</button>
+      </div>
+
+      <div class="instruction" id="instruction">
+         <p>
+            <span id="instruc">Instruction: </span>
+            Click "Start" to begin the quiz. Select a subject that you want to quiz. Read each question and select your
+            answer.To retake the
+            quiz, click "Restart Quiz."
+         </p>
+
+         <ul>
+            <li>
+               <input type="radio" name="subject" id="programming" class="subject">
+               <label for="programming" id="programming_subject">Programming</label>
+            </li>
+            <li>
+               <input type="radio" name="subject" id="multimedia" class="subject">
+               <label for="multimedia" id="multimedia_subject">Multimedia</label>
+            </li>
+            <li>
+               <input type="radio" name="subject" id="rizal" class="subject">
+               <label for="rizal" id="rizal_subject">Rizal</label>
+            </li>
+            <li>
+               <input type="radio" name="subject" id="discreteMath" class="subject">
+               <label for="discreteMath" id="discreteMath_subject">Discrete Mathematics</label>
+            </li>
+         </ul>
+
+         <button id="start" type="submit">Start</button>
+      </div>
+
+      <div class="quiz-container" id="quiz">
+         <div class="quiz-header">
+            <div class="head">
+               <span id="progress"></span>
+               <div id="timer">Time left: 30s</div>
+            </div>
+            <h1 id="questions">Questions is loading...</h1>
+            <ul>
+               <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a_text">Answer...</label>
+               </li>
+               <li>
+                  <input type="radio" name="answer" id="b" class="answer">
+                  <label for="b" id="b_text">Answer...</label>
+               </li>
+               <li>
+                  <input type="radio" name="answer" id="c" class="answer">
+                  <label for="c" id="c_text">Answer...</label>
+               </li>
+               <li>
+                  <input type="radio" name="answer" id="d" class="answer">
+                  <label for="d" id="d_text">Answer...</label>
+               </li>
+            </ul>
+            <button type="submit" id="submit">Next</button>
+         </div>
+      </div>
+   </section>
+</body>
+
+</html>
